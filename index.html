@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">    
+    <title>Desafio 1</title>
+</head>
+<body>
+    <header>
+        <img src="/Imagenes/logo.svg" alt="logo" name="logo">
+    </header>
+    <main>
+        <div class="contenedor-izquierda">
+            <form class = "formulario"action="">
+                <label for="texto-ingresado">Ingrese el texto aqui</label>
+                <textarea name="texto-ingresado" id="texto-ingresado" cols="35" rows="10
+                " placeholder="Ingresa el texto aqui"></textarea>
+            </form>
+
+            <div class="indicaciones">
+                <ion-icon name="alert-circle-sharp"></ion-icon>
+                <p>Solo letras minúsculas y sin acentos</p>                    
+            </div>
+           
+            <div class="botones">                
+                <button id ='btn-encriptar' class="btn-encriptar">Encriptar</button>
+                <button id ='btn-desencriptar' class="btn-desencriptar">Desencriptar</button>
+            </div>
+                
+        </div>      
+
+        <div class="derecha" id="mensaje-derecha" >
+           
+            <div class ocultar id="ocultar">
+                <div class="munheco">
+                    <img src="/Imagenes/munheco.svg" alt="munheco" name="munheco"/>
+                </div>
+                <div  class="mensaje">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>               
+            </div>
+            <div id="texto-resultado" class="texto-resultado">
+                <p id='texto-salida'></p>                
+                <button id ='btn-copiar' class="btn-copiar">Copiar</button>                
+            </div>
+            
+        </div>        
+    </main>
+
+    <footer>
+        <p class="copyright">&copy by Kev </p>
+    </footer>
+
+    <SCript src="js/app.js"></SCript>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
